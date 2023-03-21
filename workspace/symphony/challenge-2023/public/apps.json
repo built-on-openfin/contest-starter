@@ -1,0 +1,500 @@
+{
+  "applications": [
+    {
+      "appId": "fdc3-intent-view-2-0",
+      "name": "fdc3-intent-view-2-0",
+      "title": "Intents using FDC3 (2.0)",
+      "description": "This view allows you to experiment with the raising and listening of intents using the fdc3 api.",
+      "categories": ["developer tools", "training", "dock"],
+      "version": "2.0.0",
+      "tooltip": "Intents using FDC3",
+      "lang": "en-US",
+      "icons": [
+        {
+          "src": "https://built-on-openfin.github.io/dev-extensions/extensions/v12.0.0/common/images/icon-blue.png"
+        }
+      ],
+      "screenshots": [
+        {
+          "src": "https://built-on-openfin.github.io/dev-extensions/extensions/v12.0.0/interop/images/previews/view-intents-fdc3.png",
+          "label": "Intents using FDC3"
+        }
+      ],
+      "contactEmail": "sales@openfin.co",
+      "supportEmail": "support@openfin.co",
+      "publisher": "OpenFin",
+      "type": "web",
+      "details": {
+        "url": "https://built-on-openfin.github.io/dev-extensions/extensions/v12.0.0/interop/fdc3/intent/2-0/fdc3-intent-view.html"
+      },
+      "interop": {
+        "intents": {
+          "listensFor": {
+            "StartCall": {
+              "displayName": "Start a Call",
+              "contexts": ["fdc3.contact", "fdc3.contactList"]
+            },
+            "StartChat": {
+              "displayName": "Start a Chat",
+              "contexts": ["fdc3.contact", "fdc3.contactList"]
+            }
+          },
+          "userChannels": {
+            "broadcasts": ["fdc3.instrument"],
+            "listensFor": [
+              "fdc3.instrument",
+              "fdc3.instrumentList",
+              "fdc3.position",
+              "fdc3.portfolio",
+              "fdc3.chart",
+              "fdc3.timeRange"
+            ]
+          },
+          "appChannels": []
+        }
+      },
+      "hostManifests": {
+        "OpenFin": {
+          "details": {
+            "customData": {
+			  "mergeContextData": false,
+              "contextData": {
+                "fdc3.chat.initSettings": [
+                  {
+                    "type": "fdc3.chat.initSettings",
+                    "message": {
+                      "text": {
+                        "text/markdown": "Hello there!"
+                      }
+                    }
+                  },
+                  {
+                    "type": "fdc3.chat.initSettings",
+                    "message": {
+                      "type": "fdc3.message",
+                      "text": {
+                        "text/markdown": "Hello there you both!"
+                      }
+                    },
+                    "members": {
+                      "type": "fdc3.contactList",
+                      "contacts": [
+                        {
+                          "type": "fdc3.contact",
+                          "id": {
+                            "email": "pierre.neu@symphony.com"
+                          }
+                        },
+                        {
+                          "type": "fdc3.contact",
+                          "id": {
+                            "email": "dimiter.georgiev@symphony.com"
+                          }
+                        }
+                      ]
+                    },
+                    "options": {
+                      "groupRecipients": true
+                    }
+                  },
+                  {
+                    "type": "fdc3.chat.initSettings",
+                    "message": {
+                      "text": {
+                        "text/markdown": "An individual message will be sent to each recipient"
+                      }
+                    },
+                    "members": {
+                      "type": "fdc3.contactList",
+                      "contacts": [
+                        {
+                          "type": "fdc3.contact",
+                          "id": {
+                            "email": "pierre.neu@symphony.com"
+                          }
+                        },
+                        {
+                          "type": "fdc3.contact",
+                          "id": {
+                            "email": "dimiter.georgiev@symphony.com"
+                          }
+                        }
+                      ]
+                    },
+                    "options": {
+                      "groupRecipients": false
+                    }
+                  }
+                ],
+                "fdc3.chat.message": [
+                  {
+                    "type": "fdc3.chat.message",
+                    "chatRoom": {
+                      "type": "fdc3.chat.room",
+                      "providerName": "Symphony",
+                      "id": {
+                        "streamIds": ["r2z0c14BJnF9bfsUbZRPN3///oP8vpocdA=="]
+                      },
+                      "uri": "http://symphony.com/ref/room/r2z0c14BJnF9bfsUbZRPN3///oP8vpocdA==",
+                      "name": "Test Room FDC3"
+                    },
+                    "message": {
+                      "text": {
+                        "text/markdown": "Hello there again!"
+                      }
+                    }
+                  }
+                ],
+                "fdc3.searchCriteria": [
+                  {
+                    "type": "fdc3.searchCriteria",
+                    "contexts": [
+                      {
+                        "type": "fdc3.instrument",
+                        "id": {
+                          "ticker": "EURUSD"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "type": "fdc3.searchCriteria",
+                    "contexts": ["#SUP-15478"]
+                  }
+                ],
+                "fdc3.chat.room": [
+                  {
+                    "type": "fdc3.chat.room",
+                    "providerName": "Symphony",
+                    "id": {
+                      "streamIds": ["pumfjaAN3WztjdHko6kzdX///n0RSaBUdA=="]
+                    }
+                  }
+                ],
+				"fdc3.contact": [{
+                    "type": "fdc3.contact",
+                    "name": "John Doe",
+                    "id": {
+                      "email": "john.doe@symphony.com"
+                    }
+                  }],
+
+                "fdc3.contactList": [
+                  {
+                    "type": "fdc3.contactList",
+                    "contacts": [
+                      {
+                        "type": "fdc3.contact",
+                        "name": "John Doe",
+                        "id": {
+                          "email": "john.doe@symphony.com"
+                        }
+                      },
+                      {
+                        "type": "fdc3.contact",
+                        "name": "Jane Doe",
+                        "id": {
+                          "email": "jane.doe@symphony.com"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "intentData": {
+                "StartChat": ["fdc3.chat.initSettings"],
+                "ViewMessages": ["fdc3.searchCriteria"],
+                "ViewChat": ["fdc3.chat.room", "fdc3.contact"],
+                "SendChatMessage": ["fdc3.chat.message"],
+                "Custom": [
+                  "fdc3.chat.initSettings",
+                  "fdc3.searchCriteria",
+                  "fdc3.chat.room"
+                ]
+              },
+			  "mergeIntentData": false
+            },
+            "preloadScripts": [
+              {
+                "url": "https://built-on-openfin.github.io/dev-extensions/extensions/v12.0.0/common/style/style-changed-preload.js"
+              }
+            ]
+          }
+        }
+      }
+    },
+	{
+		"appId": "fdc3-context-view-2-0",
+		"name": "fdc3-context-view-2-0",
+		"title": "Contexts using FDC3 (2.0)",
+		"description": "This view allows you to experiment with the broadcasting and listening of contexts using the fdc3 api.",
+		"categories": ["developer tools", "training", "dock"],
+		"version": "2.0.0",
+		"tooltip": "Context using FDC3",
+		"lang": "en-US",
+		"icons": [
+		  {
+			"src": "https://built-on-openfin.github.io/dev-extensions/extensions/v12.0.0/common/favicon-32x32.png"
+		  }
+		],
+		"screenshots": [
+		  {
+			"src": "https://built-on-openfin.github.io/dev-extensions/extensions/v12.0.0/interop/images/previews/view-context-fdc3.png",
+			"label": "Contexts using FDC3"
+		  }
+		],
+		"contactEmail": "sales@openfin.co",
+		"supportEmail": "support@openfin.co",
+		"publisher": "OpenFin",
+		"type": "web",
+		"details": {
+		  "url": "https://built-on-openfin.github.io/dev-extensions/extensions/v12.0.0/interop/fdc3/context/2-0/fdc3-broadcast-view.html"
+		},
+		"interop": {
+		},
+		"hostManifests": {
+		  "OpenFin": {
+			"details": {
+			  "preloadScripts": [
+				{
+				  "url": "https://built-on-openfin.github.io/dev-extensions/extensions/v12.0.0/common/style/style-changed-preload.js"
+				}
+			  ]
+			}
+		  }
+		}
+	  },
+    {
+      "appId": "fdc3-workbench",
+      "name": "fdc3-workbench",
+      "title": "FDC3 Workbench",
+      "description": "Development and test tool for FDC3 desktop agents and apps",
+      "categories": ["developer tools", "training", "dock"],
+      "version": "1.0.0",
+      "tooltip": "FDC3 Workbench",
+      "lang": "en-US",
+      "icons": [
+        {
+          "src": "https://fdc3.finos.org/toolbox/fdc3-workbench/fdc3-icon-256.png"
+        }
+      ],
+      "screenshots": [
+        {
+          "src": "https://fdc3.finos.org/docs/assets/fdc3-logo.png",
+          "label": "FDC3 logo"
+        }
+      ],
+      "contactEmail": "fdc3@finos.org,",
+      "supportEmail": "fdc3-maintainers@finos.org,",
+      "publisher": "FDC3",
+      "type": "web",
+      "details": {
+        "url": "https://fdc3.finos.org/toolbox/fdc3-workbench/"
+      },
+      "hostManifests": {
+        "Web App Manifest": "https://example.com/fdc3-workbench.json"
+      },
+      "localizedVersions": {
+        "fr-FR": {
+          "title": "FDC3 Table de travail",
+          "description": "Outil de développement et de test pour les desktop agents et applications FDC3"
+        }
+      },
+      "interop": {
+        "intents": {
+          "listensFor": {
+            "CreateInteraction": {
+              "displayName": "Create Interaction",
+              "contexts": [
+                "fdc3.instrument",
+                "fdc3.instrumentList",
+                "fdc3.position",
+                "fdc3.portfolio",
+                "fdc3.chart",
+                "fdc3.timeRange",
+                "fdc3.interaction"
+              ]
+            }
+          },
+          "userChannels": {
+            "broadcasts": ["fdc3.instrument"],
+            "listensFor": [
+              "fdc3.instrument",
+              "fdc3.instrumentList",
+              "fdc3.position",
+              "fdc3.portfolio",
+              "fdc3.chart",
+              "fdc3.timeRange"
+            ]
+          },
+          "appChannels": []
+        }
+      }
+    },
+    {
+      "appId": "ecp-focus",
+      "categories": ["chat", "communication", "compliance", "productivity"],
+      "contactEmail": "sales@symphony.com",
+      "description": "Symphony is the most secure and compliance-enabling markets’ infrastructure and technology platform, where solutions are built or integrated to standardize, automate and innovate financial services workflows. It is a vibrant community of over half a million financial professionals with a trusted directory and serves over 1,000 institutions.",
+      "details": {
+        "url": "https://develop.symphony.com/client-bff/embed/index.html?&partnerId=3&showHashTagPopover=true&showCashTagPopover=true&container=true"
+      },
+      "icons": [
+        {
+          "src": "https://www.gitbook.com/cdn-cgi/image/width=40,dpr=2,height=40,fit=contain,format=auto/https://324641165-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/collections%2F-MB51RkjSmfA_ejydg4M%2Ficon%2F8uJO4Ad3wmaMSpWiKjWz%2FS-logo.jpeg?alt=media&token=c9d1b242-420d-48f8-93eb-4325b090cbb1"
+        }
+      ],
+      "interop": {
+        "intents": {
+          "listensFor": {
+            "SendChatMessage": {
+              "contexts": ["fdc3.chat.message"],
+              "displayName": "Send Chat Message"
+            },
+            "StartChat": {
+              "contexts": ["fdc3.chat.initSettings"],
+              "displayName": "Start Chat"
+            },
+            "ViewChat": {
+              "contexts": [
+                "fdc3.contact",
+                "fdc3.chat.room",
+                "fdc3.contactList"
+              ],
+              "displayName": "View Chat"
+            }
+          },
+          "raises": {
+            "CreateInteraction": {
+              "contexts": ["fdc3.interaction"],
+              "displayName": "Create Interaction"
+            },
+            "ViewContact": {
+              "contexts": ["fdc3.contact"],
+              "displayName": "View Contact"
+            },
+            "ViewInstrument": {
+              "contexts": ["fdc3.instrument"],
+              "displayName": "View Instrument"
+            }
+          }
+        }
+      },
+      "moreInfo": "https://symphony.com/",
+      "name": "Symphony ECP - Focus",
+      "publisher": "Symphony Communication Services, LLC",
+      "screenshots": [
+        {
+          "src": "https://symphony.com/wp-content/uploads/2021/09/SYM-Hero-with-C9-1-2048x1688.png"
+        }
+      ],
+      "supportEmail": "support@symphony.com",
+      "title": "Symphony ECP - Focus",
+      "type": "web"
+    },
+    {
+      "appId": "ecp-full",
+      "categories": ["chat", "communication", "compliance", "productivity", "dock"],
+      "contactEmail": "sales@symphony.com",
+      "description": "Symphony is the most secure and compliance-enabling markets’ infrastructure and technology platform, where solutions are built or integrated to standardize, automate and innovate financial services workflows. It is a vibrant community of over half a million financial professionals with a trusted directory and serves over 1,000 institutions.",
+      "details": {
+        "url": "https://develop.symphony.com/client-bff/index.html?embed=true&container=true"
+      },
+      "icons": [
+        {
+          "src": "https://www.gitbook.com/cdn-cgi/image/width=40,dpr=2,height=40,fit=contain,format=auto/https://324641165-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/collections%2F-MB51RkjSmfA_ejydg4M%2Ficon%2F8uJO4Ad3wmaMSpWiKjWz%2FS-logo.jpeg?alt=media&token=c9d1b242-420d-48f8-93eb-4325b090cbb1"
+        }
+      ],
+      "interop": {
+        "intents": {
+          "listensFor": {
+            "SendChatMessage": {
+              "contexts": ["fdc3.chat.message"],
+              "displayName": "Send Chat Message"
+            },
+            "StartChat": {
+              "contexts": ["fdc3.chat.initSettings"],
+              "displayName": "Start Chat"
+            },
+            "ViewChat": {
+              "contexts": [
+                "fdc3.contact",
+                "fdc3.chat.room",
+                "fdc3.contactList"
+              ],
+              "displayName": "View Chat"
+            },
+            "ViewMessages": {
+              "contexts": ["fdc3.searchCriteria"],
+              "displayName": "View Messages"
+            }
+          },
+          "raises": {
+            "CreateInteraction": {
+              "contexts": ["fdc3.interaction"],
+              "displayName": "Create Interaction"
+            },
+            "ViewContact": {
+              "contexts": ["fdc3.contact"],
+              "displayName": "View Contact"
+            },
+            "ViewInstrument": {
+              "contexts": ["fdc3.instrument"],
+              "displayName": "View Instrument"
+            }
+          }
+        }
+      },
+	  "customConfig": {
+		"instanceMode": "single"
+	  },
+      "moreInfo": "https://symphony.com/",
+      "name": "Symphony ECP - Collaboration",
+      "publisher": "Symphony Communication Services, LLC",
+      "screenshots": [
+        {
+          "src": "https://symphony.com/wp-content/uploads/2021/09/SYM-Hero-with-C9-1-2048x1688.png"
+        }
+      ],
+      "supportEmail": "support@symphony.com",
+      "title": "Symphony ECP - Collaboration",
+      "type": "web"
+    },
+	{
+		"appId": "style-guide",
+		"name": "style-guide",
+		"title": "Style Guide",
+		"description": "This view gives you an example of the css file available as part of this challenge. You are free to use your own css preferences.",
+		"categories": ["developer tools", "training"],
+		"version": "2.0.0",
+		"tooltip": "Style Guide",
+		"lang": "en-US",
+		"icons": [
+		  {
+			"src": "http://localhost:8080/images/icon-blue.png"
+		  }
+		],
+		"screenshots": [
+		],
+		"contactEmail": "sales@openfin.co",
+		"supportEmail": "support@openfin.co",
+		"publisher": "OpenFin",
+		"type": "web",
+		"details": {
+		  "url": "http://localhost:8080/style/style.html"
+		},
+		"hostManifests": {
+			"OpenFin": {
+				"details": {
+					"preloadScripts": [
+						{
+							"url": "http://localhost:8080/style/style-changed-preload.js"
+						}
+					]
+				}
+			}
+		}
+	  }
+  ],
+  "message": "OK"
+}

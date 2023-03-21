@@ -1,0 +1,18 @@
+node_modules
+build
+out
+.DS_STORE
+
+how-to/*/package-lock.json
+
+# Bundle/builds
+**/*.bundle.js
+**/build
+
+# Uploads
+
+**/public/uploads/runtimelogs/*.log
+**/public/uploads/applogs/*.zip
+
+./public*/
+updatable-packages.txt
