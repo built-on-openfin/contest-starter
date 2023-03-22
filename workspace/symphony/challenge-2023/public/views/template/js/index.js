@@ -1,13 +1,13 @@
 async function init() {
-	const ticker = document.querySelector('#ticker');
+	const contact = document.querySelector('#contact');
 	const execute = document.querySelector('#execute');
 	const result = document.querySelector('#result');
 
 	result.textContent = 'Not Set';
 	execute.addEventListener('click', () => {
-		const value = ticker.value;
+		const value = contact.value;
 		console.log(`Value ${value}`);
-		result.textContent = ticker.value;
+		result.textContent = contact.value;
 	});
 }
 

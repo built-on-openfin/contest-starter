@@ -1,6 +1,6 @@
 # OpenFin & Symphony Challenge 2023
 
-This is a pre-configured workspace that lets you plug in your own applications in order to use the Symphony views and their intent support to develop a workflow using their UIs and the power of OpenFin.
+This is a pre-configured workspace that lets you plug in your own applications in order to use the Symphony views and their intent support to develop a workflow using Symphony and the power of OpenFin.
 
 ## Getting Started
 
@@ -32,7 +32,7 @@ npm run start
 npm run client
 ```
 
-5. Type any character into the search box to show the default list of Applications or use the launched dock.
+5. Type any character into the search box or hit enter to show the default list of Applications or use the launched dock.
    
 6. If you modify the project and wish to rebuild you can run setup again or the build command below:
 

@@ -1,3 +1,3 @@
 # Contest Starter
 
-This repo is where we will hold samples that are geared towards specific contests or events. 
+Welcome to the contest starter repo.

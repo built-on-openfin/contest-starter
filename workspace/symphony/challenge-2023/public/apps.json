@@ -1,5 +1,63 @@
 {
   "applications": [
+	{
+		"appId": "notifications-generator",
+		"name": "notifications-studio",
+		"title": "OpenFin Notifications Studio",
+		"description": "Notifications Studio: This is OpenFin's tool for demonstrating the power of our Notification Center. Use it to create local notifications or use some of the examples shown in our Catalog. Experiment with our features and see the power that OpenFin Notification Center can bring to your applications.",
+		"categories": ["developer tools", "training"],
+		"type": "other",
+		"details": {
+		},
+		"icons": [
+			{
+				"src": "https://cdn.openfin.co/demos/notifications/generator/images/icon-blue.png"
+			}
+		],
+		"contactEmail": "contact@example.com",
+		"supportEmail": "support@example.com",
+		"publisher": "OpenFin",
+		"screenshots": [
+			{
+				"src": "http://localhost:8080/common/images/previews/openfin-notification-studio.png"
+			}
+		],
+		"hostManifests": {
+			"OpenFin": {
+				"type": "manifest",
+				"details": "https://cdn.openfin.co/studio/notification/app.json"
+			}
+		}
+	},
+	{
+		"appId": "openfin-process-manager",
+		"name": "openfin-process-manager",
+		"title": "OpenFin Process Manager",
+		"categories": ["developer tools", "training", "dock"],
+		"description": "Process Manager: This is OpenFin's tool for helping developers build OpenFin Applications. It lets you see the OpenFin applications that are running, the performance of the applications (memory and cpu) and easy access to the dev tools for the Windows of your application.",
+		"type": "other",
+		"details": {
+		},
+		"icons": [
+			{
+				"src": "https://cdn.openfin.co/release/apps/openfin/processmanager/2.0.2/ofpm-icon.png"
+			}
+		],
+		"contactEmail": "contact@example.com",
+		"supportEmail": "support@example.com",
+		"publisher": "OpenFin",
+		"screenshots": [
+			{
+				"src": "http://localhost:8080/common/images/previews/openfin-process-manager.png"
+			}
+		],
+		"hostManifests": {
+			"OpenFin": {
+				"type": "manifest",
+				"details": "https://cdn.openfin.co/release/apps/openfin/processmanager/app.json"
+			}
+		}
+	},
     {
       "appId": "fdc3-intent-view-2-0",
       "name": "fdc3-intent-view-2-0",
@@ -466,9 +524,6 @@
 		"title": "Style Guide",
 		"description": "This view gives you an example of the css file available as part of this challenge. You are free to use your own css preferences.",
 		"categories": ["developer tools", "training"],
-		"version": "2.0.0",
-		"tooltip": "Style Guide",
-		"lang": "en-US",
 		"icons": [
 		  {
 			"src": "http://localhost:8080/images/icon-blue.png"
@@ -493,6 +548,48 @@
 					]
 				}
 			}
+		}
+	  },
+	  {
+		"appId": "javascript-view",
+		"name": "javascript-view",
+		"title": "JavaScript View",
+		"description": "This is a basic javascript view in the public/views/template/js directory that you can simply update, save and refresh. It is here as a starting point if your prefer to write vanilla JavaScript.",
+		"categories": ["training"],
+		"icons": [
+		  {
+			"src": "http://localhost:8080/images/icon-blue.png"
+		  }
+		],
+		"screenshots": [
+		],
+		"contactEmail": "sales@openfin.co",
+		"supportEmail": "support@openfin.co",
+		"publisher": "OpenFin",
+		"type": "web",
+		"details": {
+		  "url": "http://localhost:8080/views/template/js/index.html"
+		}
+	  },
+	  {
+		"appId": "typescript-view",
+		"name": "typescript-view",
+		"title": "TypeScript View",
+		"description": "This is a basic TypeScript view in the public/views/template/ts directory that you can simply update, save, build (using npm run build) and refresh. It is here as a starting point if your prefer to write TypeScript instead of vanilla JavaScript.",
+		"categories": ["training"],
+		"icons": [
+		  {
+			"src": "http://localhost:8080/images/icon-blue.png"
+		  }
+		],
+		"screenshots": [
+		],
+		"contactEmail": "sales@openfin.co",
+		"supportEmail": "support@openfin.co",
+		"publisher": "OpenFin",
+		"type": "web",
+		"details": {
+		  "url": "http://localhost:8080/views/template/ts/index.html"
 		}
 	  }
   ],
