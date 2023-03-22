@@ -1,4 +1,5 @@
 {
+	"$schema": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/customize-workspace/schemas/manifest.schema.json",
 	"devtools_port": 9090,
 	"licenseKey": "openfin-demo-license-key",
 	"runtime": {
@@ -91,7 +92,6 @@
 		  ],
 		  "cacheDurationInSeconds": 10,
 		  "cacheDurationInMinutes": 0,
-		  "appAssetTag": "appasset",
 		  "manifestTypes": [
 			"view",
 			"snapshot",
@@ -425,16 +425,6 @@
 				}
 			  },
 			  "enabled": true
-			},
-			{
-			  "title": "About",
-			  "description": "Provides information about this platform.",
-			  "id": "about",
-			  "icon": "https://www.openfin.co/favicon.ico",
-			  "url": "https://built-on-openfin.github.io/workspace-starter/dev/john/fdc3/customize-workspace/js/modules/composite/about.bundle.js",
-			  "data": {},
-			  "enabled": true,
-			  "excludeFromSourceFilter": true
 			}
 		  ]
 		},
@@ -461,96 +451,6 @@
 			  "url": "https://built-on-openfin.github.io/workspace-starter/dev/john/fdc3/customize-workspace/js/modules/log/console.bundle.js"
 			}
 		  ]
-		},
-		"actionsProvider": {
-		  "modules": [
-			{
-			  "enabled": true,
-			  "id": "developer-actions",
-			  "url": "https://built-on-openfin.github.io/workspace-starter/dev/john/fdc3/customize-workspace/js/modules/composite/developer.bundle.js"
-			},
-			{
-			  "enabled": true,
-			  "id": "about-actions",
-			  "url": "https://built-on-openfin.github.io/workspace-starter/dev/john/fdc3/customize-workspace/js/modules/composite/about.bundle.js",
-			  "data": {
-				"windowOptions": {
-				  "name": "about",
-				  "url": "https://built-on-openfin.github.io/workspace-starter/dev/john/fdc3/common/windows/version/about.html",
-				  "defaultCentered": true,
-				  "showTaskbarIcon": false,
-				  "autoShow": true,
-				  "minimizable": false,
-				  "maximizable": false,
-				  "defaultHeight": 396,
-				  "defaultWidth": 760,
-				  "customData": {}
-				}
-			  }
-			}
-		  ]
-		},
-		"conditionsProvider": {
-		  "modules": [
-			{
-			  "enabled": true,
-			  "id": "about-conditions",
-			  "url": "https://built-on-openfin.github.io/workspace-starter/dev/john/fdc3/customize-workspace/js/modules/composite/about.bundle.js"
-			}
-		  ]
-		},
-		"analyticsProvider": {
-		  "modules": [
-			{
-			  "enabled": false,
-			  "id": "analytics.console",
-			  "url": "https://built-on-openfin.github.io/workspace-starter/dev/john/fdc3/customize-workspace/js/modules/analytics/console.bundle.js",
-			  "data": {
-				"eventLogLevel": "info"
-			  }
-			}
-		  ]
-		},
-		"versionProvider": {
-		  "appVersion": "1.0.0",
-		  "minVersion": {
-			"workspace": "12.0.0"
-		  },
-		  "versionWindow": {
-			"name": "versioning",
-			"url": "https://built-on-openfin.github.io/workspace-starter/dev/john/fdc3/customize-workspace/windows/version/version.html",
-			"defaultCentered": true,
-			"showTaskbarIcon": false,
-			"autoShow": true,
-			"minimizable": false,
-			"maximizable": false,
-			"defaultHeight": 481,
-			"defaultWidth": 760,
-			"saveWindowState": false,
-			"includeInSnapshots": false
-		  },
-		  "endpointId": "version",
-		  "versionCheckIntervalInSeconds": 30
-		},
-		"menusProvider": {
-		  "modules": [
-			{
-			  "enabled": true,
-			  "id": "developer-menus",
-			  "url": "https://built-on-openfin.github.io/workspace-starter/dev/john/fdc3/customize-workspace/js/modules/composite/developer.bundle.js",
-			  "data": {}
-			},
-			{
-			  "id": "about",
-			  "icon": "https://built-on-openfin.github.io/workspace-starter/dev/john/fdc3/customize-workspace/favicon.ico",
-			  "title": "About",
-			  "description": "Provides information about this platform.",
-			  "enabled": true,
-			  "url": "https://built-on-openfin.github.io/workspace-starter/dev/john/fdc3/customize-workspace/js/modules/composite/about.bundle.js",
-			  "data": {}
-			}
-		  ]
-		},
-		"lifecycleProvider": {}
+		}
 	  }
 }

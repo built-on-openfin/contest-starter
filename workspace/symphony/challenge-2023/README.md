@@ -2,6 +2,10 @@
 
 This is a pre-configured workspace that lets you plug in your own applications in order to use the Symphony views and their intent support to develop a workflow using Symphony and the power of OpenFin.
 
+| Requirements                                                                  | Version                                                                                                      |
+| ----------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| Node.js                                                                       | 16+                                                                                                              |
+
 ## Getting Started
 
 1. Install dependencies and do the initial build. Note that these examples assume you are in the sub-directory for the example.
