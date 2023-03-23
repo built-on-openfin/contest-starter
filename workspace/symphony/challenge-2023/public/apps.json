@@ -6,7 +6,7 @@
       "contactEmail": "sales@symphony.com",
       "description": "Symphony is the most secure and compliance-enabling markets’ infrastructure and technology platform, where solutions are built or integrated to standardize, automate and innovate financial services workflows. It is a vibrant community of over half a million financial professionals with a trusted directory and serves over 1,000 institutions.",
       "details": {
-        "url": "https://develop.symphony.com/client-bff/embed/index.html?&partnerId=3&showHashTagPopover=true&showCashTagPopover=true&container=true"
+        "url": "https://develop.symphony.com/client-bff/embed/index.html?&partnerId=3&showHashTagPopover=true&showCashTagPopover=true&container=true&mode=dark"
       },
       "icons": [
         {
@@ -73,7 +73,7 @@
       "contactEmail": "sales@symphony.com",
       "description": "Symphony is the most secure and compliance-enabling markets’ infrastructure and technology platform, where solutions are built or integrated to standardize, automate and innovate financial services workflows. It is a vibrant community of over half a million financial professionals with a trusted directory and serves over 1,000 institutions.",
       "details": {
-        "url": "https://develop.symphony.com/client-bff/index.html?embed=true&container=true"
+        "url": "https://develop.symphony.com/client-bff/index.html?embed=true&container=true&mode=dark"
       },
       "icons": [
         {
@@ -172,7 +172,7 @@
       "publisher": "OpenFin",
       "screenshots": [
         {
-          "src": "http://localhost:8080/common/images/previews/openfin-notification-studio.png"
+          "src": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/common/images/previews/openfin-notification-studio.png"
         }
       ],
       "hostManifests": {
@@ -200,7 +200,7 @@
       "publisher": "OpenFin",
       "screenshots": [
         {
-          "src": "http://localhost:8080/common/images/previews/openfin-process-manager.png"
+          "src": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/common/images/previews/openfin-process-manager.png"
         }
       ],
       "hostManifests": {
@@ -247,6 +247,14 @@
             "StartChat": {
               "displayName": "Start a Chat",
               "contexts": ["fdc3.contact", "fdc3.contactList"]
+            },
+            "ViewInstrument": {
+              "displayName": "View Instrument",
+              "contexts": ["fdc3.instrument", "fdc3.instrumentList"]
+            },
+            "CreateInteraction": {
+              "displayName": "Create Interaction",
+              "contexts": ["fdc3.interaction"]
             }
           },
           "userChannels": {
@@ -390,7 +398,6 @@
                     }
                   }
                 ],
-
                 "fdc3.contactList": [
                   {
                     "type": "fdc3.contactList",
@@ -418,6 +425,7 @@
                 "ViewMessages": ["fdc3.searchCriteria"],
                 "ViewChat": ["fdc3.chat.room", "fdc3.contact"],
                 "SendChatMessage": ["fdc3.chat.message"],
+                "CreateInteraction": ["fdc3.interaction"],
                 "Custom": [
                   "fdc3.chat.initSettings",
                   "fdc3.searchCriteria",

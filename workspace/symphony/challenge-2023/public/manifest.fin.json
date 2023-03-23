@@ -11,7 +11,7 @@
 		"uuid": "openfin-symphony-challenge-2023",
 		"icon": "http://localhost:8080/favicon.ico",
 		"autoShow": false,
-		"providerUrl": "https://built-on-openfin.github.io/workspace-starter/dev/john/fdc3/customize-workspace/platform/provider.html",
+		"providerUrl": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/customize-workspace/platform/provider.html",
 		"preventQuitOnLastWindowClosed": true,
 		"permissions": {
 			"System": {
@@ -77,10 +77,10 @@
 		  ]
 		},
 		"platformProvider": {
-		  "rootUrl": "https://built-on-openfin.github.io/workspace-starter/dev/john/fdc3/customize-workspace",
+		  "rootUrl": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/customize-workspace",
 		  "sharing": true,
 		  "intentPicker": {
-			"url": "https://built-on-openfin.github.io/workspace-starter/dev/john/fdc3/common/windows/intents/instance-picker.html",
+			"url": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/common/windows/intents/instance-picker.html",
 			"height": 715,
 			"width": 665,
 			"fdc3InteropApi": "2.0"
@@ -107,7 +107,7 @@
 			{
 				"enabled": true,
 				"id": "fdc3-app",
-				"url": "https://built-on-openfin.github.io/workspace-starter/dev/john/fdc3/customize-workspace/js/modules/endpoints/fdc3-app.bundle.js"
+				"url": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/customize-workspace/js/modules/endpoints/fdc3-app.bundle.js"
 			}
 		  ],
 		  "endpoints": [
@@ -164,7 +164,7 @@
 				"type": "Custom",
 				"tooltip": "Toggle Scheme",
 				"disabled": false,
-				"iconUrl": "https://built-on-openfin.github.io/workspace-starter/dev/john/fdc3/common/icons/{theme}/{scheme}/theme.svg",
+				"iconUrl": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/common/icons/{theme}/{scheme}/theme.svg",
 				"action": {
 				  "id": "toggle-scheme",
 				  "customData": {}
@@ -181,7 +181,7 @@
 				"type": "Custom",
 				"tooltip": "Show Home",
 				"disabled": false,
-				"iconUrl": "https://built-on-openfin.github.io/workspace-starter/dev/john/fdc3/common/icons/{theme}/{scheme}/search.svg",
+				"iconUrl": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/common/icons/{theme}/{scheme}/search.svg",
 				"action": {
 				  "id": "home-show",
 				  "customData": {}
@@ -195,7 +195,7 @@
 				"type": "Custom",
 				"tooltip": "Toggle Notification Center",
 				"disabled": false,
-				"iconUrl": "https://built-on-openfin.github.io/workspace-starter/dev/john/fdc3/common/icons/{theme}/{scheme}/bell.svg",
+				"iconUrl": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/common/icons/{theme}/{scheme}/bell.svg",
 				"action": {
 				  "id": "notification-toggle",
 				  "customData": {}
@@ -209,7 +209,7 @@
 				"type": "Custom",
 				"tooltip": "Pin this window",
 				"disabled": false,
-				"iconUrl": "https://built-on-openfin.github.io/workspace-starter/dev/john/fdc3/common/icons/{theme}/{scheme}/pin.svg",
+				"iconUrl": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/common/icons/{theme}/{scheme}/pin.svg",
 				"action": {
 				  "id": "pin-window",
 				  "customData": {
@@ -226,7 +226,7 @@
 				"type": "Custom",
 				"tooltip": "Unpin this window",
 				"disabled": false,
-				"iconUrl": "https://built-on-openfin.github.io/workspace-starter/dev/john/fdc3/common/icons/{theme}/{scheme}/pin-vertical.svg",
+				"iconUrl": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/common/icons/{theme}/{scheme}/pin-vertical.svg",
 				"action": {
 				  "id": "unpin-window",
 				  "customData": {
@@ -271,7 +271,7 @@
 				"type": "Custom",
 				"tooltip": "Share",
 				"disabled": false,
-				"iconUrl": "https://built-on-openfin.github.io/workspace-starter/dev/john/fdc3/common/icons/{theme}/{scheme}/share.svg",
+				"iconUrl": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/common/icons/{theme}/{scheme}/share.svg",
 				"action": {
 				  "id": "share",
 				  "customData": {}
@@ -395,7 +395,7 @@
 		  "icon": "http://localhost:8080/favicon.ico"
 		},
 		"integrationProvider": {
-		  "icon": "https://built-on-openfin.github.io/workspace-starter/dev/john/fdc3/customize-workspace/favicon.ico",
+		  "icon": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/customize-workspace/favicon.ico",
 		  "isManagementEnabled": false,
 		  "command": "integrations",
 		  "commandDescription": "Allows the management of integrations for this platform. You can decide whether enabled integrations should be included when a query is entered.",
@@ -405,10 +405,10 @@
 			  "description": "A module that manages workspaces.",
 			  "id": "workspaces",
 			  "icon": "https://www.openfin.co/favicon.ico",
-			  "url": "https://built-on-openfin.github.io/workspace-starter/dev/john/fdc3/customize-workspace/js/modules/integrations/workspaces.bundle.js",
+			  "url": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/customize-workspace/js/modules/integrations/workspaces.bundle.js",
 			  "data": {
 				"images": {
-				  "workspace": "https://built-on-openfin.github.io/workspace-starter/dev/john/fdc3/customize-workspace/icons/{scheme}/workspace.svg"
+				  "workspace": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/customize-workspace/icons/{scheme}/workspace.svg"
 				}
 			  },
 			  "enabled": true
@@ -418,10 +418,10 @@
 			  "description": "A module that manages pages.",
 			  "id": "pages",
 			  "icon": "https://www.openfin.co/favicon.ico",
-			  "url": "https://built-on-openfin.github.io/workspace-starter/dev/john/fdc3/customize-workspace/js/modules/integrations/pages.bundle.js",
+			  "url": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/customize-workspace/js/modules/integrations/pages.bundle.js",
 			  "data": {
 				"images": {
-				  "page": "https://built-on-openfin.github.io/workspace-starter/dev/john/fdc3/customize-workspace/icons/{scheme}/page.svg"
+				  "page": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/customize-workspace/icons/{scheme}/page.svg"
 				}
 			  },
 			  "enabled": true
@@ -433,7 +433,7 @@
 			{
 			  "enabled": true,
 			  "id": "interop",
-			  "url": "https://built-on-openfin.github.io/workspace-starter/dev/john/fdc3/customize-workspace/js/modules/init-options/interop.bundle.js",
+			  "url": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/customize-workspace/js/modules/init-options/interop.bundle.js",
 			  "data": {
 				"supportedActions": [
 				  "raise-intent",
@@ -448,7 +448,7 @@
 			{
 			  "enabled": true,
 			  "id": "console",
-			  "url": "https://built-on-openfin.github.io/workspace-starter/dev/john/fdc3/customize-workspace/js/modules/log/console.bundle.js"
+			  "url": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/customize-workspace/js/modules/log/console.bundle.js"
 			}
 		  ]
 		}
