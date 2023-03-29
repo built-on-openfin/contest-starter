@@ -1,6 +1,6 @@
 # OpenFin & Symphony Challenge 2023
 
-This is a pre-configured workspace that lets you plug in your own applications in order to use the Symphony views and their intent support to develop a workflow using Symphony and the power of OpenFin.
+This is a pre-configured workspace that lets you plug in your own applications in order to use the Symphony views and their intent support to develop a workflow using Symphony and the power of OpenFin. More information about the manifest settings and capabilities of this example workspace can be found here: [workspace-starter/how-to/customize-workspace](https://github.com/built-on-openfin/workspace-starter/blob/main/how-to/customize-workspace/README.md).
 
 | Requirements                                                                  | Version                                                                                                      |
 | ----------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
