@@ -1,0 +1,406 @@
+{
+  "$schema": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/customize-workspace/schemas/manifest.schema.json",
+  "devtools_port": 9090,
+  "licenseKey": "openfin-demo-license-key",
+  "runtime": {
+    "arguments": "--v=1 --inspect",
+    "version": "30.110.74.8"
+  },
+  "platform": {
+    "name": "openfin-symphony-challenge-2023",
+    "uuid": "openfin-symphony-challenge-2023",
+    "icon": "http://localhost:8080/favicon.ico",
+    "autoShow": false,
+    "providerUrl": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/customize-workspace/platform/provider.html",
+    "preventQuitOnLastWindowClosed": true,
+    "permissions": {
+      "System": {
+        "openUrlWithBrowser": {
+          "enabled": true,
+          "protocols": ["mailto", "msteams", "tel"]
+        }
+      }
+    },
+    "defaultWindowOptions": {
+      "experimental": {
+        "showViewsOnResize": {
+          "enabled": true,
+          "delayMs": 0
+        }
+      },
+      "permissions": {
+        "System": {
+          "openUrlWithBrowser": {
+            "enabled": true,
+            "protocols": ["mailto", "msteams", "tel"]
+          }
+        }
+      }
+    },
+    "defaultViewOptions": {
+      "fdc3InteropApi": "2.0",
+      "permissions": {
+        "System": {
+          "openUrlWithBrowser": {
+            "enabled": true,
+            "protocols": ["mailto", "msteams", "tel"]
+          }
+        }
+      }
+    }
+  },
+  "snapshot": {
+    "windows": []
+  },
+  "shortcut": {
+    "company": "OpenFin",
+    "description": "A way of showing examples of what OpenFin can do.",
+    "icon": "http://localhost:8080/favicon.ico",
+    "name": "OpenFin - Symphony - Challenge - 2023",
+    "target": ["desktop", "start-menu"]
+  },
+  "supportInformation": {
+    "company": "OpenFin",
+    "product": "Contest Starter - OpenFin/Symphony 2023 Challenge",
+    "email": "support@openfin.co",
+    "forwardErrorReports": true
+  },
+  "customSettings": {
+    "bootstrap": {
+      "home": true,
+      "store": false,
+      "dock": true,
+      "notifications": true,
+      "autoShow": ["dock", "home"]
+    },
+    "platformProvider": {
+      "rootUrl": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/customize-workspace",
+      "sharing": true,
+      "interop": {
+        "intentResolver": {
+          "url": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/common/windows/intents/instance-picker.html",
+          "height": 715,
+          "width": 665,
+          "fdc3InteropApi": "2.0"
+        },
+        "intentOptions": {},
+        "unregisteredApp": {
+          "appId": "unregistered",
+          "title": "Other",
+          "description": "If you can not find an application to support your action please check the instances associated with this entry to see if it satisfies your need.",
+          "icons": [
+            {
+              "src": "http://localhost:8080/favicon.ico"
+            }
+          ],
+          "publisher": "Multiple",
+          "intents": [
+            {
+              "name": "StartCall",
+              "displayName": "Start a Call",
+              "contexts": ["fdc3.contact", "fdc3.contactList"]
+            },
+            {
+              "name": "StartChat",
+              "displayName": "Start a Chat",
+              "contexts": ["fdc3.contact", "fdc3.contactList"]
+            },
+            {
+              "name": "ViewChart",
+              "displayName": "View Chart",
+              "contexts": [
+                "fdc3.instrument",
+                "fdc3.instrumentList",
+                "fdc3.portfolio",
+                "fdc3.position"
+              ]
+            },
+            {
+              "name": "ViewContact",
+              "displayName": "View Contact Details",
+              "contexts": ["fdc3.contact"]
+            },
+            {
+              "name": "ViewQuote",
+              "displayName": "View Quote",
+              "contexts": ["fdc3.instrument"]
+            },
+            {
+              "name": "ViewNews",
+              "displayName": "View News",
+              "contexts": [
+                "fdc3.country",
+                "fdc3.instrument",
+                "fdc3.instrumentList",
+                "fdc3.organization",
+                "fdc3.portfolio"
+              ]
+            },
+            {
+              "name": "ViewAnalysis",
+              "displayName": "View Analysis",
+              "contexts": [
+                "fdc3.instrument",
+                "fdc3.organization",
+                "fdc3.portfolio"
+              ]
+            },
+            {
+              "name": "ViewInstrument",
+              "displayName": "View Instrument Details",
+              "contexts": ["fdc3.instrument"]
+            }
+          ]
+        }
+      }
+    },
+    "appProvider": {
+      "endpointIds": [
+        "http://localhost:8080/apps.symphony.json",
+        "http://localhost:8080/apps.openfin.json",
+        "http://localhost:8080/apps.json"
+      ],
+      "cacheDurationInSeconds": 10,
+      "cacheDurationInMinutes": 0,
+      "manifestTypes": [
+        "view",
+        "snapshot",
+        "manifest",
+        "inline-view",
+        "window",
+        "inline-window",
+        "desktop-browser"
+      ]
+    },
+    "homeProvider": {
+      "id": "contest-home",
+      "title": "OpenFin/Symphony Challenge 2023",
+      "icon": "http://localhost:8080/favicon.ico",
+      "queryMinLength": 3,
+      "queryAgainst": ["title"]
+    },
+    "dockProvider": {
+      "id": "contest-dock",
+      "title": "OpenFin/Symphony Challenge 2023",
+      "icon": "http://localhost:8080/favicon.ico",
+      "workspaceComponents": {
+        "hideHomeButton": false,
+        "hideWorkspacesButton": false,
+        "hideNotificationsButton": false,
+        "hideStorefrontButton": false
+      },
+      "apps": [
+        {
+          "display": "individual",
+          "tags": ["dock"]
+        }
+      ],
+      "buttons": []
+    },
+    "notificationProvider": {
+      "id": "contest-notifications",
+      "title": "Notifications",
+      "icon": "http://localhost:8080/favicon.ico"
+    },
+    "browserProvider": {
+		  "windowOptions": {
+			"title": "Contest Starter",
+			"icon": "http://localhost:8080/favicon.ico"
+		  },
+		  "globalMenu": [
+		  ],
+		  "pageMenu": [
+		  ],
+		  "viewMenu": [
+		  ],
+		  "toolbarButtons": [
+			{
+			  "include": false,
+			  "id": "toggle-scheme",
+			  "button": {
+				"type": "Custom",
+				"tooltip": "Toggle Scheme",
+				"disabled": false,
+				"iconUrl": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/common/icons/{theme}/{scheme}/theme.svg",
+				"action": {
+				  "id": "toggle-scheme",
+				  "customData": {}
+				}
+			  },
+			  "conditions": [
+				"themed"
+			  ]
+			},
+			{
+			  "include": true,
+			  "id": "home-show",
+			  "button": {
+				"type": "Custom",
+				"tooltip": "Show Home",
+				"disabled": false,
+				"iconUrl": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/common/icons/{theme}/{scheme}/search.svg",
+				"action": {
+				  "id": "home-show",
+				  "customData": {}
+				}
+			  }
+			},
+			{
+			  "include": true,
+			  "id": "notification-toggle",
+			  "button": {
+				"type": "Custom",
+				"tooltip": "Toggle Notification Center",
+				"disabled": false,
+				"iconUrl": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/common/icons/{theme}/{scheme}/bell.svg",
+				"action": {
+				  "id": "notification-toggle",
+				  "customData": {}
+				}
+			  }
+			},
+			{
+			  "include": true,
+			  "id": "pin-window",
+			  "button": {
+				"type": "Custom",
+				"tooltip": "Pin this window",
+				"disabled": false,
+				"iconUrl": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/common/icons/{theme}/{scheme}/pin.svg",
+				"action": {
+				  "id": "pin-window",
+				  "customData": {
+					"sourceId": "pin-window",
+					"replacementId": "unpin-window"
+				  }
+				}
+			  }
+			},
+			{
+			  "include": false,
+			  "id": "unpin-window",
+			  "button": {
+				"type": "Custom",
+				"tooltip": "Unpin this window",
+				"disabled": false,
+				"iconUrl": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/common/icons/{theme}/{scheme}/pin-vertical.svg",
+				"action": {
+				  "id": "unpin-window",
+				  "customData": {
+					"sourceId": "unpin-window",
+					"replacementId": "pin-window"
+				  }
+				}
+			  }
+			},
+			{
+			  "include": true,
+			  "id": "lock-unlock",
+			  "button": {
+				"type": "LockUnlockPage"
+			  }
+			},
+			{
+			  "include": true,
+			  "id": "show-hide-tabs",
+			  "button": {
+				"type": "ShowHideTabs"
+			  }
+			},
+			{
+			  "include": true,
+			  "id": "color-linking",
+			  "button": {
+				"type": "ColorLinking"
+			  }
+			},
+			{
+			  "include": true,
+			  "id": "preset-layouts",
+			  "button": {
+				"type": "PresetLayouts"
+			  }
+			},
+			{
+			  "include": true,
+			  "id": "share",
+			  "button": {
+				"type": "Custom",
+				"tooltip": "Share",
+				"disabled": false,
+				"iconUrl": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/common/icons/{theme}/{scheme}/share.svg",
+				"action": {
+				  "id": "share",
+				  "customData": {}
+				}
+			  },
+			  "conditions": [
+				"sharing"
+			  ]
+			},
+			{
+			  "include": true,
+			  "id": "save-menu",
+			  "button": {
+				"type": "SaveMenu"
+			  }
+			}
+		  ]
+		},
+    "integrationProvider": {
+      "icon": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/customize-workspace/favicon.ico",
+      "isManagementEnabled": false,
+      "command": "integrations",
+      "commandDescription": "Allows the management of integrations for this platform. You can decide whether enabled integrations should be included when a query is entered.",
+      "modules": [
+        {
+          "title": "Workspaces",
+          "description": "A module that manages workspaces.",
+          "id": "workspaces",
+          "icon": "https://www.openfin.co/favicon.ico",
+          "url": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/customize-workspace/js/modules/integrations/workspaces.bundle.js",
+          "data": {
+            "images": {
+              "workspace": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/customize-workspace/icons/{scheme}/workspace.svg"
+            }
+          },
+          "enabled": true
+        },
+        {
+          "title": "Pages",
+          "description": "A module that manages pages.",
+          "id": "pages",
+          "icon": "https://www.openfin.co/favicon.ico",
+          "url": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/customize-workspace/js/modules/integrations/pages.bundle.js",
+          "data": {
+            "images": {
+              "page": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/customize-workspace/icons/{scheme}/page.svg"
+            }
+          },
+          "enabled": true
+        }
+      ]
+    },
+    "initOptionsProvider": {
+      "modules": [
+        {
+          "enabled": true,
+          "id": "interop",
+          "url": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/customize-workspace/js/modules/init-options/interop.bundle.js",
+          "data": {
+            "supportedActions": ["raise-intent", "share-context"]
+          }
+        }
+      ]
+    },
+    "loggerProvider": {
+      "modules": [
+        {
+          "enabled": true,
+          "id": "console",
+          "url": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/customize-workspace/js/modules/log/console.bundle.js"
+        }
+      ]
+    }
+  }
+}

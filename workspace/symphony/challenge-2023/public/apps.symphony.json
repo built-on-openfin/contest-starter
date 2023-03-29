@@ -1,0 +1,164 @@
+{
+  "$schema": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/customize-workspace/schemas/fdc3v2.0-appd.schema.json",
+  "applications": [
+    {
+      "appId": "ecp-focus",
+      "categories": ["chat", "communication", "compliance", "productivity"],
+      "contactEmail": "sales@symphony.com",
+      "description": "Symphony is the most secure and compliance-enabling markets’ infrastructure and technology platform, where solutions are built or integrated to standardize, automate and innovate financial services workflows. It is a vibrant community of over half a million financial professionals with a trusted directory and serves over 1,000 institutions.",
+      "details": {
+        "url": "https://develop.symphony.com/client-bff/embed/index.html?&partnerId=3&showHashTagPopover=true&showCashTagPopover=true&container=true&mode=dark"
+      },
+      "icons": [
+        {
+          "src": "https://www.gitbook.com/cdn-cgi/image/width=40,dpr=2,height=40,fit=contain,format=auto/https://324641165-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/collections%2F-MB51RkjSmfA_ejydg4M%2Ficon%2F8uJO4Ad3wmaMSpWiKjWz%2FS-logo.jpeg?alt=media&token=c9d1b242-420d-48f8-93eb-4325b090cbb1"
+        }
+      ],
+      "interop": {
+        "intents": {
+          "listensFor": {
+            "SendChatMessage": {
+              "contexts": ["fdc3.chat.message"],
+              "displayName": "Send Chat Message"
+            },
+            "StartChat": {
+              "contexts": ["fdc3.chat.initSettings"],
+              "displayName": "Start Chat"
+            },
+            "ViewChat": {
+              "contexts": [
+                "fdc3.contact",
+                "fdc3.chat.room",
+                "fdc3.contactList"
+              ],
+              "displayName": "View Chat"
+            }
+          },
+          "raises": {
+            "CreateInteraction": {
+              "contexts": ["fdc3.interaction"],
+              "displayName": "Create Interaction"
+            },
+            "ViewContact": {
+              "contexts": ["fdc3.contact"],
+              "displayName": "View Contact"
+            },
+            "ViewInstrument": {
+              "contexts": ["fdc3.instrument"],
+              "displayName": "View Instrument"
+            }
+          }
+        }
+      },
+      "moreInfo": "https://symphony.com/",
+      "name": "Symphony ECP - Focus",
+      "publisher": "Symphony Communication Services, LLC",
+      "screenshots": [
+        {
+          "src": "https://symphony.com/wp-content/uploads/2021/09/SYM-Hero-with-C9-1-2048x1688.png"
+        }
+      ],
+      "supportEmail": "support@symphony.com",
+      "title": "Symphony ECP - Focus",
+      "type": "web"
+    },
+    {
+      "appId": "ecp-full",
+      "categories": [
+        "chat",
+        "communication",
+        "compliance",
+        "productivity",
+        "dock"
+      ],
+      "contactEmail": "sales@symphony.com",
+      "description": "Symphony is the most secure and compliance-enabling markets’ infrastructure and technology platform, where solutions are built or integrated to standardize, automate and innovate financial services workflows. It is a vibrant community of over half a million financial professionals with a trusted directory and serves over 1,000 institutions.",
+      "details": {
+        "url": "https://develop.symphony.com/client-bff/index.html?embed=true&container=true&mode=dark"
+      },
+      "icons": [
+        {
+          "src": "https://www.gitbook.com/cdn-cgi/image/width=40,dpr=2,height=40,fit=contain,format=auto/https://324641165-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/collections%2F-MB51RkjSmfA_ejydg4M%2Ficon%2F8uJO4Ad3wmaMSpWiKjWz%2FS-logo.jpeg?alt=media&token=c9d1b242-420d-48f8-93eb-4325b090cbb1"
+        }
+      ],
+      "interop": {
+        "intents": {
+          "listensFor": {
+            "SendChatMessage": {
+              "contexts": ["fdc3.chat.message"],
+              "displayName": "Send Chat Message"
+            },
+            "StartChat": {
+              "contexts": ["fdc3.chat.initSettings"],
+              "displayName": "Start Chat"
+            },
+            "ViewChat": {
+              "contexts": [
+                "fdc3.contact",
+                "fdc3.chat.room",
+                "fdc3.contactList"
+              ],
+              "displayName": "View Chat"
+            },
+            "ViewMessages": {
+              "contexts": ["fdc3.searchCriteria"],
+              "displayName": "View Messages"
+            }
+          },
+          "raises": {
+            "CreateInteraction": {
+              "contexts": ["fdc3.interaction"],
+              "displayName": "Create Interaction"
+            },
+            "ViewContact": {
+              "contexts": ["fdc3.contact"],
+              "displayName": "View Contact"
+            },
+            "ViewInstrument": {
+              "contexts": ["fdc3.instrument"],
+              "displayName": "View Instrument"
+            }
+          }
+        }
+      },
+      "moreInfo": "https://symphony.com/",
+      "name": "Symphony ECP - Collaboration",
+      "publisher": "Symphony Communication Services, LLC",
+      "screenshots": [
+        {
+          "src": "https://symphony.com/wp-content/uploads/2021/09/SYM-Hero-with-C9-1-2048x1688.png"
+        }
+      ],
+      "supportEmail": "support@symphony.com",
+      "title": "Symphony ECP - Collaboration",
+      "type": "web",
+      "hostManifests": {
+        "OpenFin": {
+          "config": {
+            "instanceMode": "single"
+          }
+        }
+      }
+    },
+    {
+      "appId": "symphony-docs",
+      "name": "symphony-docs",
+      "title": "Symphony Documentation",
+      "description": "Documentation related to Symphony's FDC3 support.",
+      "categories": ["training"],
+      "icons": [
+        {
+          "src": "https://www.gitbook.com/cdn-cgi/image/width=40,dpr=2,height=40,fit=contain,format=auto/https://324641165-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/collections%2F-MB51RkjSmfA_ejydg4M%2Ficon%2F8uJO4Ad3wmaMSpWiKjWz%2FS-logo.jpeg?alt=media&token=c9d1b242-420d-48f8-93eb-4325b090cbb1"
+        }
+      ],
+      "screenshots": [],
+      "contactEmail": "sales@symphony.com",
+      "publisher": "Symphony Communication Services, LLC",
+      "type": "web",
+      "details": {
+        "url": "https://docs.developers.symphony.com/embedded-modules/desktop-interoperability/fdc3-intents"
+      }
+    }
+  ],
+  "message": "OK"
+}

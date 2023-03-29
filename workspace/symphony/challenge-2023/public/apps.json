@@ -1,0 +1,46 @@
+{
+  "$schema": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/customize-workspace/schemas/fdc3v2.0-appd.schema.json",
+  "applications": [
+    {
+      "appId": "javascript-view",
+      "name": "javascript-view",
+      "title": "JavaScript View",
+      "description": "This is a basic javascript view in the public/views/template/js directory that you can simply update, save and refresh. It is here as a starting point if your prefer to write vanilla JavaScript.",
+      "categories": ["training"],
+      "icons": [
+        {
+          "src": "http://localhost:8080/images/icon-blue.png"
+        }
+      ],
+      "screenshots": [],
+      "contactEmail": "sales@openfin.co",
+      "supportEmail": "support@openfin.co",
+      "publisher": "OpenFin",
+      "type": "web",
+      "details": {
+        "url": "http://localhost:8080/views/template/js/index.html"
+      }
+    },
+    {
+      "appId": "typescript-view",
+      "name": "typescript-view",
+      "title": "TypeScript View",
+      "description": "This is a basic TypeScript view in the public/views/template/ts directory that you can simply update, save, build (using npm run build) and refresh. It is here as a starting point if your prefer to write TypeScript instead of vanilla JavaScript.",
+      "categories": ["training"],
+      "icons": [
+        {
+          "src": "http://localhost:8080/images/icon-blue.png"
+        }
+      ],
+      "screenshots": [],
+      "contactEmail": "sales@openfin.co",
+      "supportEmail": "support@openfin.co",
+      "publisher": "OpenFin",
+      "type": "web",
+      "details": {
+        "url": "http://localhost:8080/views/template/ts/index.html"
+      }
+    }
+  ],
+  "message": "OK"
+}
