@@ -9,7 +9,7 @@
   "platform": {
     "name": "openfin-symphony-challenge-2023",
     "uuid": "openfin-symphony-challenge-2023",
-    "icon": "http://localhost:8080/favicon.ico",
+    "icon": "http://localhost:7070/favicon.ico",
     "autoShow": false,
     "providerUrl": "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/customize-workspace/platform/provider.html",
     "preventQuitOnLastWindowClosed": true,
@@ -55,7 +55,7 @@
   "shortcut": {
     "company": "OpenFin",
     "description": "A way of showing examples of what OpenFin can do.",
-    "icon": "http://localhost:8080/favicon.ico",
+    "icon": "http://localhost:7070/favicon.ico",
     "name": "OpenFin - Symphony - Challenge - 2023",
     "target": ["desktop", "start-menu"]
   },
@@ -90,7 +90,7 @@
           "description": "If you can not find an application to support your action please check the instances associated with this entry to see if it satisfies your need.",
           "icons": [
             {
-              "src": "http://localhost:8080/favicon.ico"
+              "src": "http://localhost:7070/favicon.ico"
             }
           ],
           "publisher": "Multiple",
@@ -156,9 +156,9 @@
     },
     "appProvider": {
       "endpointIds": [
-        "http://localhost:8080/apps.symphony.json",
-        "http://localhost:8080/apps.openfin.json",
-        "http://localhost:8080/apps.json"
+        "http://localhost:7070/apps.symphony.json",
+        "http://localhost:7070/apps.openfin.json",
+        "http://localhost:7070/apps.json"
       ],
       "cacheDurationInSeconds": 10,
       "cacheDurationInMinutes": 0,
@@ -173,16 +173,16 @@
       ]
     },
     "homeProvider": {
-      "id": "contest-home",
+      "id": "openfin-symphony-challenge-2023",
       "title": "OpenFin/Symphony Challenge 2023",
-      "icon": "http://localhost:8080/favicon.ico",
+      "icon": "http://localhost:7070/favicon.ico",
       "queryMinLength": 3,
       "queryAgainst": ["title"]
     },
     "dockProvider": {
-      "id": "contest-dock",
+      "id": "openfin-symphony-challenge-2023",
       "title": "OpenFin/Symphony Challenge 2023",
-      "icon": "http://localhost:8080/favicon.ico",
+      "icon": "http://localhost:7070/favicon.ico",
       "workspaceComponents": {
         "hideHomeButton": false,
         "hideWorkspacesButton": false,
@@ -198,14 +198,14 @@
       "buttons": []
     },
     "notificationProvider": {
-      "id": "contest-notifications",
+      "id": "openfin-symphony-challenge-2023",
       "title": "Notifications",
-      "icon": "http://localhost:8080/favicon.ico"
+      "icon": "http://localhost:7070/favicon.ico"
     },
     "browserProvider": {
 		  "windowOptions": {
 			"title": "Contest Starter",
-			"icon": "http://localhost:8080/favicon.ico"
+			"icon": "http://localhost:7070/favicon.ico"
 		  },
 		  "globalMenu": [
 		  ],

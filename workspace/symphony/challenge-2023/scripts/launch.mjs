@@ -105,7 +105,7 @@ async function run(manifestUrl, manifestFiles) {
 (async () => {
 	const launchArgs = process.argv.slice(2);
 
-	let manifestUrl = 'http://localhost:8080/manifest.fin.json';
+	let manifestUrl = 'http://localhost:7070/manifest.fin.json';
 	let manifestFiles;
 	let delayStartup;
 
