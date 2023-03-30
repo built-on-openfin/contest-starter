@@ -37,12 +37,36 @@ npm run client
 ```
 
 5. Type any character into the search box or hit enter to show the default list of Applications or use the launched dock.
-   
+
 6. If you modify the project and wish to rebuild you can run setup again or the build command below:
 
 ```shell
 npm run build
 ```
+
+## What's included
+
+- We include two Symphony Views Focus & Collaboration that can be launched.
+- We include a simple JavaScript View that is in the public folder that you can customize
+- We include a simple TypeScript View that is in the public folder with the ts source file in the [client/src/views/template](./client/src/views/template/index.ts) folder. This view includes an example of publishing a notification and listening to notification events.
+- We include Views that link to Symphony and OpenFin documentation.
+- We include OpenFin Tools related to debugging, fdc3 context and intents and notifications.
+
+## What Pod are you pointing at by default?
+
+We are pointing to the Symphony develop pod.
+
+## How do I change the pod that I want to use?
+
+Go to the [public/apps.symphony.json](./public/apps.symphony.json) and update the symphony urls to your pod at lines 10 and 77.
+
+## Where do I add my apps?
+
+You have a json file for your own apps (it currently lists the JavaScript and TypeScript views for you to edit). It can be found in [public/apps.json](./public/apps.json).
+
+## What are you using for app definitions?
+
+We are using FDC3 2.0 App Definitions. <https://fdc3.finos.org/schemas/2.0/app-directory.html#tag/Application/paths/~1v2~1apps/get>
 
 ---
 
