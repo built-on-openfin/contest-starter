@@ -5,7 +5,7 @@ import cors from "cors";
 const app = express();
 
 const mainPath = path.join(__dirname, "..", "..", "public");
-const port = 8080;
+const port = 7070;
 
 console.log(`Main Path / = ${mainPath}`);
 app.use(cors());

@@ -409,7 +409,7 @@
       "categories": ["training"],
       "icons": [
         {
-          "src": "http://localhost:8080/images/icon-blue.png"
+          "src": "http://localhost:7070/images/icon-blue.png"
         }
       ],
       "screenshots": [],
@@ -429,7 +429,7 @@
       "categories": ["developer tools", "training"],
       "icons": [
         {
-          "src": "http://localhost:8080/images/icon-blue.png"
+          "src": "http://localhost:7070/images/icon-blue.png"
         }
       ],
       "screenshots": [],
@@ -438,14 +438,14 @@
       "publisher": "OpenFin",
       "type": "web",
       "details": {
-        "url": "http://localhost:8080/style/style.html"
+        "url": "http://localhost:7070/style/style.html"
       },
       "hostManifests": {
         "OpenFin": {
           "details": {
             "preloadScripts": [
               {
-                "url": "http://localhost:8080/style/style-changed-preload.js"
+                "url": "http://localhost:7070/style/style-changed-preload.js"
               }
             ]
           }
