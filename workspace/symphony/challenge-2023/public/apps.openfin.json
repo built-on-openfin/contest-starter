@@ -95,6 +95,10 @@
               "displayName": "Start a Chat",
               "contexts": ["fdc3.contact", "fdc3.contactList"]
             },
+            "ViewContact": {
+              "displayName": "View Contact",
+              "contexts": ["fdc3.contact"]
+            },
             "ViewInstrument": {
               "displayName": "View Instrument",
               "contexts": ["fdc3.instrument", "fdc3.instrumentList"]
