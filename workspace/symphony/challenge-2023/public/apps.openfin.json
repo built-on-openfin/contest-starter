@@ -373,17 +373,17 @@
       "interop": {
         "intents": {
           "listensFor": {
+            "ViewContact": {
+              "displayName": "View Contact",
+              "contexts": ["fdc3.contact"]
+            },
+            "ViewInstrument": {
+              "displayName": "View Instrument",
+              "contexts": ["fdc3.instrument", "fdc3.instrumentList"]
+            },
             "CreateInteraction": {
               "displayName": "Create Interaction",
-              "contexts": [
-                "fdc3.instrument",
-                "fdc3.instrumentList",
-                "fdc3.position",
-                "fdc3.portfolio",
-                "fdc3.chart",
-                "fdc3.timeRange",
-                "fdc3.interaction"
-              ]
+              "contexts": ["fdc3.interaction"]
             }
           },
           "userChannels": {
