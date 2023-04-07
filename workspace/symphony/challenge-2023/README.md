@@ -8,6 +8,12 @@ This is a pre-configured workspace that lets you plug in your own applications i
 
 ## Getting Started
 
+To ensure you have OpenFin installed and to have a handy development tool start off by launching or downloading and installing:
+
+- [OpenFin Process Manager](https://start.openfin.co/pm)
+
+Once you have that up and running you can run the steps below and you will see your workspace platform show up on the desktop (the Home and Dock UI should appear) and it should also be listed in OpenFin Process Manager.
+
 1. Install dependencies and do the initial build. Note that these examples assume you are in the sub-directory for the example.
 
 ```shell
