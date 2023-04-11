@@ -83,6 +83,22 @@ You have a json file for your own apps (it currently lists the JavaScript and Ty
 
 We are using FDC3 2.0 App Definitions. <https://fdc3.finos.org/schemas/2.0/app-directory.html#tag/Application/paths/~1v2~1apps/get>
 
+## What if I want to host my platform somewhere other than localhost?
+
+The pre-configured platform: <https://github.com/built-on-openfin/workspace-starter/tree/workspace/v12.0.0/how-to/customize-workspace> is configured to support manifests launched from localhost or OpenFin recognised domains.
+
+To host it on an internal server (or your own machine but not using localhost as the address) you will need to clone and build the platform and add it to your public folder.
+
+- git clone https://github.com/built-on-openfin/workspace-starter.git
+- switch to the workspace/v12.0.0 branch
+- cd to how-to/customize-workspace
+- type: npm run setup
+- type: npm run prepare-package (this will generate a packaged folder)
+- copy the contents of the packaged/dist folder to your contest starter public folder
+- copy the folder "schemas" from packaged to your contest starter public folder
+- update manifest-hosts.json to include your intended domain
+- in your manifest.fin.json (or a copy you intend to deploy) replace "https://built-on-openfin.github.io/workspace-starter/workspace/v12.0.0/" with the path of your intended domain (the path that hosts your public folder) 
+- when you launch the manifest from the internal server it should now load like it does when run from localhost.
 ---
 
 ### Read more about [working with Workspace](https://developers.openfin.co/of-docs/docs/overview-of-workspace)
