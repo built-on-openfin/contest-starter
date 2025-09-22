@@ -4,6 +4,9 @@ import cors from "cors";
 
 const app = express();
 
+// Disable X-Powered-By header to prevent framework information disclosure
+app.disable('x-powered-by');
+
 const mainPath = path.join(__dirname, "..", "..", "public");
 const port = 7070;
 
